@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Lamp</title>
+    <link rel="icon" href="images/icon_lampada.png" type="lampada">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img" alt="menu-img">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <ul>
+                <li><a href="">Mais recente</a></li>
+                <li><a href="">Moderno</a></li>
+                <li><a href="">Contemporâneo</a></li>
+                <li><a href="">Acessível</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>A mais brilhosa<br> em Iluminação</h1>
+            <p>Esta é a primeira lâmpada da empresa Vue Lamp. Estamos fazendo uma enorme coleção de lâmpadas modernas em todas as categorias, desde uso doméstico até escritório</p>
+            <a href="">Conhecer todas as coleções</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+
+
+    </div>
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>
